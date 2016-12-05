@@ -11,4 +11,10 @@ export function es5() {
 }
 
 export function es6() {
+  function d(spec) {
+    var {x,y,z=0} = spec
+    return x + y + z
+  }
+
+  return d
 }
