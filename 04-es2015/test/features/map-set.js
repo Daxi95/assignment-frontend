@@ -28,5 +28,22 @@ export default function() {
   })
 
   it('should show Map/Set behavior in ES6', () => {
+    let mySet = new Set
+
+    mySet
+      .add(1)
+      .add(2)
+      .add(3)
+
+    mySet.has(1).should.be.true
+    mySet.has(2).should.be.true
+    mySet.has(3).should.be.true
+    mySet.has(4).should.be.false
+
+    var myMap = new Map
+    myMap.set('Hello', 'World!')
+    myMap.set('second', 2);
+    myMap.get('Hello').should.eql('World!')
+    myMap.get('second').should.eql(2)
   })
 }
