@@ -15,5 +15,11 @@ export default function() {
   })
 
   it('should show Promise behavior in ES6', () => {
+    var p1 = es6();
+    p1.then(function (val) {
+      val.should.eql(10)
+    }, function (val) {
+      //if reject is set
+    })
   })
 }
