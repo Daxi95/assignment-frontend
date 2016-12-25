@@ -1,8 +1,7 @@
 import $ from 'jquery'
 import router from './router'
 import homeTpl from './templates/home.hbs'
-import magnusTpl from './templates/magnus.hbs'
-import sergeyTpl from './templates/sergey.hbs'
+import playerTpl from './templates/player.hbs'
 import contactTpl from './templates/contact.hbs'
 import notFoundTpl from './templates/not-found.hbs'
 
